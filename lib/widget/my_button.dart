@@ -16,7 +16,7 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPress,
       style: ElevatedButton.styleFrom(
           backgroundColor: buttonColor,
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),

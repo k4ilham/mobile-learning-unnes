@@ -1,0 +1,133 @@
+[
+    {
+        "title" : "Teknik",  
+        "description" : "1 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+            {
+                "title" : "Mobile Learning",
+                "description" : "Mobile Learning",
+                "image" : "assets/images/splash.png",
+                "chapter" : [
+                    {
+                        "title" : "Pengenalan Tools",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "lnWvhC7tZhs",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "UI / UX",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "SsGNEi21LqQ",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : " Persiapan Project",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "1iA-CEI4I_s",
+                        "link_pdf": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title" : "Pendidikan",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "MIPA",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Ekonomi",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Bisnis",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Bahasa",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Seni",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Hukum",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Kedokteran",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Sosial",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Politik",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    },
+    {
+        "title" : "Olahraga",  
+        "description" : "0 Course",
+        "image" : "assets/images/splash.png",
+        "course" : [
+
+        ]
+    }
+    
+
+]

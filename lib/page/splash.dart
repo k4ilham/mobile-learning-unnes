@@ -1,4 +1,4 @@
-
+import 'package:myapp/page/home.dart';
 
 import '../core.dart';
 
@@ -33,14 +33,14 @@ class BodySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyContainer(
+    return MyContainer(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
-        Mytext(
+        const Mytext(
           titleText: 'Mobile learning\nUniversitas Negeri Semarang',
           titleStyle: TextStyle(
             fontSize: 20,
@@ -49,10 +49,10 @@ class BodySection extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
-        Mytext(
+        const Mytext(
           titleText:
               'Temukan keterampilan baru\nbelajar kapan saja, dimana saja',
           titleStyle: TextStyle(
@@ -62,13 +62,16 @@ class BodySection extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         MyButton(
           buttonText: 'Mulai Belajar',
           buttonColor: primaryColor,
           textColor: whiteColor,
+          onPress: () {
+            Get.to(const Home());
+          },
         )
       ],
     );
