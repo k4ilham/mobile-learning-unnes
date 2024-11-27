@@ -1,5 +1,3 @@
-import 'package:myapp/page/course_list.dart';
-
 import '../core.dart';
 
 class Home extends StatefulWidget {
@@ -71,7 +69,7 @@ class _HomeState extends State<Home> {
                     child: Text('No Data Available'),
                   ),
                 )
-              : BodySection(filteredData: _filteredData),
+              : HomeBodySection(filteredData: _filteredData),
           const BottomNav(),
         ],
       ),
@@ -79,8 +77,8 @@ class _HomeState extends State<Home> {
   }
 }
 
-class BodySection extends StatelessWidget {
-  const BodySection({
+class HomeBodySection extends StatelessWidget {
+  const HomeBodySection({
     super.key,
     required List filteredData,
   }) : _filteredData = filteredData;

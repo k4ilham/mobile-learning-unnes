@@ -1,17 +1,17 @@
 import '../core.dart';
 
-class CourseList extends StatefulWidget {
+class CourseDetail extends StatefulWidget {
   final Map<String, dynamic> listData;
-  const CourseList({
+  const CourseDetail({
     super.key,
     required this.listData,
   });
 
   @override
-  State<CourseList> createState() => _CourseListState();
+  State<CourseDetail> createState() => _CourseDetailState();
 }
 
-class _CourseListState extends State<CourseList> {
+class _CourseDetailState extends State<CourseDetail> {
   late List<dynamic> _filteredData;
 
   @override
@@ -22,7 +22,7 @@ class _CourseListState extends State<CourseList> {
 
   Future<void> _loadData() async {
     try {
-      final data = widget.listData['course'] as List<dynamic>? ?? [];
+      final data = widget.listData['chapter'] as List<dynamic>? ?? [];
       setState(() {
         _filteredData = data;
       });
@@ -53,7 +53,7 @@ class _CourseListState extends State<CourseList> {
                     child: Text('No Data Available'),
                   ),
                 )
-              : CourseListBodySection(filteredData: _filteredData),
+              : CourseDetailBodySection(filteredData: _filteredData),
           const BottomNav(),
         ],
       ),
@@ -61,8 +61,8 @@ class _CourseListState extends State<CourseList> {
   }
 }
 
-class CourseListBodySection extends StatelessWidget {
-  const CourseListBodySection({
+class CourseDetailBodySection extends StatelessWidget {
+  const CourseDetailBodySection({
     super.key,
     required List filteredData,
   }) : _filteredData = filteredData;
@@ -76,6 +76,15 @@ class CourseListBodySection extends StatelessWidget {
         itemCount: _filteredData.length,
         itemBuilder: (context, index) {
           final item = _filteredData[index];
+
+          IconData leadingIcon;
+          if (item['type'] == 'youtube') {
+            leadingIcon = Icons.video_library;
+          } else if (item['type'] == 'pdf') {
+            leadingIcon = Icons.picture_as_pdf;
+          } else {
+            leadingIcon = Icons.book;
+          }
           return Card(
             elevation: 5,
             margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
@@ -84,15 +93,19 @@ class CourseListBodySection extends StatelessWidget {
             ),
             child: ListTile(
               onTap: () {
-                Get.to(CourseDetail(listData: item));
+                Get.to(CourseVideo(listData: item));
               },
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 8,
               ),
-              leading: Image.asset(imageSplash),
+              leading: Icon(
+                leadingIcon,
+                color: primaryColor,
+                size: 40,
+              ),
               title: Text(item['title'] ?? 'No Title'),
-              subtitle: Text(item['description'] ?? 'No description'),
+              // subtitle: Text(item['description'] ?? 'No description'),
             ),
           );
         },
