@@ -10,7 +10,7 @@
                 "image" : "assets/images/splash.png",
                 "chapter" : [
                     {
-                        "title" : "Pengenalan Tools",
+                        "title" : "Video Pengenalan Tools",
                         "description" : "",
                         "image" : "assets/images/splash.png",
                         "status" : "active",
@@ -19,7 +19,7 @@
                         "link_pdf": ""
                     },
                     {
-                        "title" : "UI / UX",
+                        "title" : "Video UI / UX",
                         "description" : "",
                         "image" : "assets/images/splash.png",
                         "status" : "active",
@@ -28,12 +28,84 @@
                         "link_pdf": ""
                     },
                     {
-                        "title" : " Persiapan Project",
+                        "title" : "Materi UI / UX",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "pdf",
+                        "link_youtube" : "",
+                        "link_pdf": "https://journal.uir.ac.id/index.php/jpmpip/article/download/10699/4628"
+                    },
+                    {
+                        "title" : "Video Persiapan Project",
                         "description" : "",
                         "image" : "assets/images/splash.png",
                         "status" : "active",
                         "type" : "youtube",
                         "link_youtube" : "1iA-CEI4I_s",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Splash Screen",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "QFX-vJniD8M",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Home Screen #1",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "M2FKVSJkm3U",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Home Screen #2",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "RKnWbKhlVZg",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Course List",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "pEnH9KUdHWM",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Course Detail",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "VsVFn3Ehnps",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Course Video",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "dZyhvpRZauo",
+                        "link_pdf": ""
+                    },
+                    {
+                        "title" : "Course Pdf",
+                        "description" : "",
+                        "image" : "assets/images/splash.png",
+                        "status" : "active",
+                        "type" : "youtube",
+                        "link_youtube" : "PePLNvdy09I",
                         "link_pdf": ""
                     }
                 ]

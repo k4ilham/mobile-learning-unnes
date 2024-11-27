@@ -3,6 +3,7 @@ export 'package:get/get.dart';
 export 'dart:convert';
 export 'package:flutter/services.dart';
 export 'package:youtube_player_flutter/youtube_player_flutter.dart';
+export 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 
 //utils
 export 'utils/app_config.dart';
@@ -22,3 +23,4 @@ export 'page/home.dart';
 export 'page/course_list.dart';
 export 'page/course_detail.dart';
 export 'page/course_video.dart';
+export 'page/course_pdf.dart';

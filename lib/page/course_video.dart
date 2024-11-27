@@ -75,7 +75,7 @@ class _CourseVideoState extends State<CourseVideo> {
           widget.listData['link_youtube'].isEmpty
               ? const Expanded(
                   child: Center(
-                    child: Text('No Voideo Availabel'),
+                    child: Text('No Video Availabel'),
                   ),
                 )
               : Expanded(

@@ -93,7 +93,11 @@ class CourseDetailBodySection extends StatelessWidget {
             ),
             child: ListTile(
               onTap: () {
-                Get.to(CourseVideo(listData: item));
+                if (item['type'] == 'pdf') {
+                  Get.to(CoursePdf(listData: item));
+                } else {
+                  Get.to(CourseVideo(listData: item));
+                }
               },
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,

@@ -1,5 +1,3 @@
-import 'package:myapp/page/home.dart';
-
 import '../core.dart';
 
 class BottomNav extends StatelessWidget {
