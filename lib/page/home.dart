@@ -1,4 +1,4 @@
-import 'package:myapp/widget/my_card.dart';
+import 'package:myapp/page/course_list.dart';
 
 import '../core.dart';
 
@@ -71,33 +71,48 @@ class _HomeState extends State<Home> {
                     child: Text('No Data Available'),
                   ),
                 )
-              : Expanded(
-                  child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                  child: GridView.builder(
-                    itemCount: _filteredData.length,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 8,
-                      mainAxisSpacing: 8,
-                    ),
-                    itemBuilder: (context, index) {
-                      final item = _filteredData[index];
-                      return GestureDetector(
-                        onTap: () {},
-                        child: MyCard(
-                          title: item['title'],
-                          description: item['description'] ?? '0 Course',
-                          imagePath: item['image'],
-                        ),
-                      );
-                    },
-                  ),
-                )),
+              : BodySection(filteredData: _filteredData),
           const BottomNav(),
         ],
       ),
     );
+  }
+}
+
+class BodySection extends StatelessWidget {
+  const BodySection({
+    super.key,
+    required List filteredData,
+  }) : _filteredData = filteredData;
+
+  final List _filteredData;
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+        child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: GridView.builder(
+        itemCount: _filteredData.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+        ),
+        itemBuilder: (context, index) {
+          final item = _filteredData[index];
+          return GestureDetector(
+            onTap: () {
+              Get.to(CourseList(listData: item));
+            },
+            child: MyCard(
+              title: item['title'],
+              description: item['description'] ?? '0 Course',
+              imagePath: item['image'],
+            ),
+          );
+        },
+      ),
+    ));
   }
 }

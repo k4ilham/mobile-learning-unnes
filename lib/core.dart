@@ -13,6 +13,7 @@ export 'widget/my_button.dart';
 export 'widget/my_text.dart';
 export 'widget/my_header.dart';
 export 'widget/my_button_nav.dart';
+export 'widget/my_card.dart';
 
 //page
 export 'page/splash.dart';

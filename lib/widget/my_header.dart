@@ -69,7 +69,7 @@ class MyHeader extends StatelessWidget {
           ],
         ),
         const SizedBox(
-          height: 16,
+          height: 8,
         ),
         if (showSearch && searchController != null && onSearchChanged != null)
           Container(
